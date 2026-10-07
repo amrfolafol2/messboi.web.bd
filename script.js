@@ -1079,8 +1079,8 @@ function initThemeSystem() {
    ========================================================================== */
 function initDownloadSystem() {
   const SHA256_HASH = 'sha256:d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe';
-  const APK_PATH = '/apk/Messboi-v1.0.0.apk';
-  const APK_FILENAME = 'Messboi-v1.0.0.apk';
+  const APK_PATH = 'https://github.com/anasexp10-create/messboi.apk/releases/download/v1.0.0/messboi.apk';
+  const APK_FILENAME = 'messboi.apk';
 
   // Create toast container if not present
   let toastContainer = document.querySelector('.download-toast-container');
@@ -1123,19 +1123,21 @@ function initDownloadSystem() {
   function handleDownloadAction(e) {
     const targetLink = e.currentTarget;
     
-    // Ensure the href and download attributes are pointing to the APK
+    // Ensure the href and download attributes are pointing directly to the official GitHub Release APK
     if (targetLink && targetLink.tagName === 'A') {
       targetLink.setAttribute('href', APK_PATH);
       targetLink.setAttribute('download', APK_FILENAME);
+      targetLink.setAttribute('target', '_blank');
+      targetLink.setAttribute('rel', 'noopener noreferrer');
       targetLink.setAttribute('data-sha256', SHA256_HASH);
     }
 
-    showDownloadToast('Messboi APK ডাউনলোড শুরু হয়েছে... (v1.0.0 • SHA-256 Verified)');
+    showDownloadToast('Messboi APK ডাউনলোড শুরু হয়েছে... (v1.0.0 • 23.1 MB • Official Release)');
   }
 
   // Select all download elements across the page
   const downloadSelectors = [
-    'a[href*="Messboi-v1.0.0.apk"]',
+    'a[href*="messboi.apk"]',
     'a[data-sha256]',
     '.btn-header-download',
     '.mobile-menu-cta',
@@ -1153,8 +1155,18 @@ function initDownloadSystem() {
   downloadButtons.forEach((btn) => {
     btn.setAttribute('href', APK_PATH);
     btn.setAttribute('download', APK_FILENAME);
+    btn.setAttribute('target', '_blank');
+    btn.setAttribute('rel', 'noopener noreferrer');
     btn.setAttribute('data-sha256', SHA256_HASH);
     btn.addEventListener('click', handleDownloadAction);
+  });
+
+  // Website ZIP (GitHub Archive) Download Handler
+  const zipDownloadButtons = document.querySelectorAll('.btn-zip-download, .github-source-link, a[href*="Messboi-Website.zip"]');
+  zipDownloadButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      showDownloadToast('📦 ওয়েবসাইট ZIP ডাউনলোড শুরু হয়েছে... (GitHub Source Archive)');
+    });
   });
 
   // SHA-256 Copy Button Handler
