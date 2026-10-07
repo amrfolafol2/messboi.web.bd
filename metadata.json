@@ -1,0 +1,6 @@
+{
+  "name": "Messboi - Official Website",
+  "description": "মেসের সব হিসাব, এক জায়গায়। Offline-first mess meal, expense, and budget management Android app for students and mess residents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

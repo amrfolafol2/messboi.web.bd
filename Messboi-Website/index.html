@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="bn-BD" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Tags -->
+  <title>Messboi – মেসের সব হিসাব, এক জায়গায় | Official Android App</title>
+  <meta name="title" content="Messboi – মেসের সব হিসাব, এক জায়গায় | Official Android App">
+  <meta name="description" content="Messboi is an offline-first mess meal, expense, and budget management Android app for students and bachelor mess residents. No login, no cloud, 100% private.">
+  <meta name="keywords" content="Messboi, mess meal app, mess expense tracker, bachelors mess হিসাব, meal rate calculator, offline android app">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2563eb">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Messboi – মেসের সব হিসাব, এক জায়গায় | Official Android App">
+  <meta property="og:description" content="Meal, expense, budget আর monthly হিসাব—সবকিছু এক জায়গায়। সম্পূর্ণ offline এবং সুরক্ষিত।">
+  <meta property="og:image" content="/images/screenshot-1.png">
+  <meta property="og:site_name" content="Messboi">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Messboi – মেসের সব হিসাব, এক জায়গায়">
+  <meta name="twitter:description" content="Meal, expense, budget আর monthly হিসাব—সবকিছু এক জায়গায়। সহজ, দ্রুত এবং সম্পূর্ণ offline.">
+  <meta name="twitter:image" content="/images/screenshot-1.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans for English & Hind Siliguri for Bangla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Messboi",
+    "operatingSystem": "Android",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Offline-first mess meal and expense management app for students and mess residents.",
+    "softwareVersion": "1.0.0",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Offline meal tracking",
+      "Expense management",
+      "Meal rate calculator",
+      "Monthly budget monitor",
+      "Local data backup and restore"
+    ]
+  }
+  </script>
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('messboi-theme') || 'default';
+        document.documentElement.setAttribute('data-theme', saved);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="brand" aria-label="Messboi Home">
+        <img src="/images/logo.png" alt="Messboi Logo" class="brand-logo" onerror="this.style.display='none'">
+        <span>Messboi</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#screenshots" class="nav-link">Screenshots</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#download" class="nav-link">Download</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Facebook Icon Button -->
+        <a href="https://www.facebook.com/share/1DDFUMAJu9/" target="_blank" rel="noopener noreferrer" class="header-icon-btn facebook-btn" aria-label="Visit Messboi on Facebook" title="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+
+        <!-- Design / Theme Palette Icon Button with Floating Theme Dropdown -->
+        <div class="header-profile-wrap">
+          <button type="button" class="header-icon-btn account-btn" id="headerAccountBtn" aria-label="Themes & Design Selector" title="Themes & Design" aria-expanded="false" aria-haspopup="dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="13.5" cy="6.5" r=".75" fill="currentColor"/>
+              <circle cx="17.5" cy="10.5" r=".75" fill="currentColor"/>
+              <circle cx="8.5" cy="7.5" r=".75" fill="currentColor"/>
+              <circle cx="6.5" cy="12.5" r=".75" fill="currentColor"/>
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 3.582 8 8 8 1.105 0 2-.895 2-2 0-.46-.15-.88-.41-1.22-.3-.39-.49-.87-.49-1.41 0-1.29 1.05-2.37 2.37-2.37H16c3.314 0 6-2.686 6-6 0-3.866-4.477-7-10-7z"/>
+            </svg>
+          </button>
+
+          <!-- Floating Theme Selector Popup (Exact Concept from Reference Screenshot) -->
+          <div class="theme-popup-dropdown" id="themePopupDropdown" aria-hidden="true" role="dialog" aria-label="Theme Selector">
+            <div class="theme-popup-header">
+              <span class="theme-popup-title">VISUAL THEMES</span>
+            </div>
+            <div class="theme-options-list" role="radiogroup" aria-label="Theme choices">
+              <!-- 1. Default -->
+              <button type="button" class="theme-option-row active" data-theme="default" role="radio" aria-checked="true">
+                <span class="theme-thumb-box">
+                  <img src="/images/themes/default-theme.png" alt="Default theme thumbnail" class="theme-thumb-img" onerror="this.src='/images/logo.png'">
+                </span>
+                <span class="theme-option-text-group">
+                  <span class="theme-option-name">Default</span>
+                  <span class="theme-option-tag" style="color:#008744;">Clean Light</span>
+                </span>
+                <span class="theme-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+
+              <!-- 2. Dr. Doom -->
+              <button type="button" class="theme-option-row" data-theme="dr-doom" role="radio" aria-checked="false">
+                <span class="theme-thumb-box">
+                  <img src="/images/themes/dr-doom-theme.jpg" alt="Dr. Doom theme thumbnail" class="theme-thumb-img">
+                </span>
+                <span class="theme-option-text-group">
+                  <span class="theme-option-name">Dr. Doom</span>
+                  <span class="theme-option-tag" style="color:#10b981;">Emerald Dark</span>
+                </span>
+                <span class="theme-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+
+              <!-- 3. Naruto -->
+              <button type="button" class="theme-option-row" data-theme="naruto" role="radio" aria-checked="false">
+                <span class="theme-thumb-box">
+                  <img src="/images/themes/naruto-theme.jpg" alt="Naruto theme thumbnail" class="theme-thumb-img">
+                </span>
+                <span class="theme-option-text-group">
+                  <span class="theme-option-name">Naruto</span>
+                  <span class="theme-option-tag" style="color:#f97316;">Chakra Ember</span>
+                </span>
+                <span class="theme-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+
+              <!-- 4. One Piece -->
+              <button type="button" class="theme-option-row" data-theme="one-piece" role="radio" aria-checked="false">
+                <span class="theme-thumb-box">
+                  <img src="/images/themes/one-piece-theme.jpg" alt="One Piece theme thumbnail" class="theme-thumb-img">
+                </span>
+                <span class="theme-option-text-group">
+                  <span class="theme-option-name">One Piece</span>
+                  <span class="theme-option-tag" style="color:#eab308;">Ocean Gold</span>
+                </span>
+                <span class="theme-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+
+              <!-- 5. E-Football -->
+              <button type="button" class="theme-option-row" data-theme="efootball" role="radio" aria-checked="false">
+                <span class="theme-thumb-box">
+                  <img src="/images/themes/efootball-theme.jpg" alt="E-Football theme thumbnail" class="theme-thumb-img">
+                </span>
+                <span class="theme-option-text-group">
+                  <span class="theme-option-name">E-Football</span>
+                  <span class="theme-option-tag" style="color:#06b6d4;">Arena Cyan</span>
+                </span>
+                <span class="theme-check-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- Profile Info Link -->
+            <div class="theme-popup-footer">
+              <button type="button" class="theme-popup-account-btn" id="openAccountDetailsFromThemeBtn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Guest Account Info (100% Offline)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="btn-header-download" title="Download Messboi APK">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download APK</span>
+        </a>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div class="mobile-menu-backdrop" id="mobileMenuBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="brand">
+        <img src="/images/logo.png" alt="Messboi Logo" class="brand-logo" onerror="this.style.display='none'">
+        <span>Messboi</span>
+      </div>
+      <button class="mobile-menu-close-btn" id="mobileMenuCloseBtn" aria-label="Close navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#features" class="mobile-nav-link">Features</a>
+      <a href="#screenshots" class="mobile-nav-link">Screenshots</a>
+      <a href="#reviews" class="mobile-nav-link">Reviews</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#download" class="mobile-nav-link">Download</a>
+      <button type="button" class="mobile-nav-link" id="mobileThemeToggleBtn" style="width:100%; text-align:left; background:transparent; border:none; display:flex; align-items:center; justify-content:space-between; cursor:pointer;">
+        <span style="display:flex; align-items:center; gap:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20z"/></svg>
+          <span>Theme Selector</span>
+        </span>
+        <span class="active-theme-badge" id="mobileActiveThemeBadge" style="font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:999px; background:var(--primary); color:#ffffff;">Default</span>
+      </button>
+      <a href="https://www.facebook.com/share/1DDFUMAJu9/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color:#1877f2; display:flex; align-items:center; gap:10px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <span>Facebook Page</span>
+      </a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="mobile-menu-cta" title="Download Messboi APK">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download Messboi APK</span>
+      </a>
+      <div class="mobile-menu-meta">
+        <span>Android APK • Version 1.0.0 • SHA-256 Verified</span>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-meta-kicker">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>100% Offline • Zero Account Required</span>
+          </div>
+
+          <div class="hero-title-group">
+            <h1 class="hero-brand-name">Messboi</h1>
+            <h2 class="hero-tagline bangla-text">“মেসের সব হিসাব, এক জায়গায়।”</h2>
+          </div>
+
+          <p class="hero-description bangla-text">
+            Meal, expense, budget আর monthly হিসাব—সবকিছু এক জায়গায়। সহজ, দ্রুত এবং সম্পূর্ণ offline.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="btn-primary" title="Download Messboi APK">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download APK</span>
+            </a>
+            <a href="#features" class="btn-secondary">
+              <span>Explore Features</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Free Android App • v1.0.0 • SHA-256 Verified Offline</span>
+          </div>
+        </div>
+
+        <!-- Single Unified Device Mockup (Home First Screenshot) -->
+        <div class="hero-mockup-wrapper">
+          <div class="hero-single-device-frame">
+            <div class="device-speaker-notch" aria-hidden="true">
+              <span class="notch-lens"></span>
+              <span class="notch-speaker"></span>
+            </div>
+            <img src="/images/screenshot-1.png" alt="Messboi Home Interface Screenshot" class="hero-single-screenshot-img" onerror="this.src='/Messboi-Website/images/screenshot-1.png';">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. DOWNLOAD MESSBOI APP BANNER (Matched with Reference Picture 1)
+         ========================================================================== -->
+    <section class="download-banner-section" id="download-strip" aria-label="Download Messboi App">
+      <div class="download-banner-backdrop-pattern"></div>
+      <div class="container download-banner-container">
+        <!-- Left: Download Messboi App Title -->
+        <div class="download-banner-left">
+          <h2 class="download-banner-title bangla-text">
+            <span>ডাউনলোড</span>
+            <span class="messboi-brand-highlight">
+              <span class="brand-text">Messboi</span>
+              <span class="brand-dot-accent" title="Messboi"></span>
+            </span>
+            <span>অ্যাপ</span>
+          </h2>
+        </div>
+
+        <!-- Right: Official Store Badges (Direct Download APK) -->
+        <div class="download-banner-right">
+          <!-- App Store Badge -->
+          <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="store-badge-card app-store-btn" id="stripDownloadAppStore" title="Download Messboi App">
+            <svg class="store-icon apple-icon" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.6-2.66 1.34-.56.64-1.06 1.7-0.92 2.73 1.02.08 2.05-.47 2.66-1.22z"/>
+            </svg>
+            <div class="store-badge-text">
+              <span class="sub">Download on the</span>
+              <span class="main">App Store</span>
+            </div>
+          </a>
+
+          <!-- Google Play Badge -->
+          <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="store-badge-card google-play-btn" id="stripDownloadGooglePlay" title="Download on Google Play">
+            <svg class="store-icon play-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path d="M3.609 1.814L13.793 12 3.61 22.186c-.37-.37-.61-.89-.61-1.48V3.294c0-.59.24-1.11.61-1.48z" fill="#00e676"/>
+              <path d="M17.41 8.384l-3.617 3.616 3.617 3.616 4.127-2.383c1.176-.679 1.176-1.787 0-2.466l-4.127-2.383z" fill="#ffd600"/>
+              <path d="M3.609 1.814l10.184 10.186 3.617-3.616L5.59 1.127C4.78.66 3.99.99 3.61 1.814z" fill="#00b0ff"/>
+              <path d="M13.793 12L3.61 22.186c.38.824 1.17 1.154 1.98.687l11.82-6.873-3.617-3.616z" fill="#ff3d00"/>
+            </svg>
+            <div class="store-badge-text">
+              <span class="sub">GET IT ON</span>
+              <span class="main">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. FEATURES SECTION (Direct Inline Page Flow - Not a Popup)
+         ========================================================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Everything Built For Mess Life</span>
+          <h2 class="section-title">Designed for Bachelor & Student Messes</h2>
+          <p class="section-subtitle">
+            Say goodbye to lost paper registers, messy notebooks, and disputed Excel sheets. Messboi makes your daily mess calculations instant and stress-free.
+          </p>
+        </div>
+
+        <!-- Features Slider (Carousel) -->
+        <div class="features-slider-container">
+          <div class="features-slider-track" id="featuresSliderTrack" aria-label="Messboi Features Slider">
+            <!-- Feature 1 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              </div>
+              <h3 class="feature-title">Flexible Meal Management</h3>
+              <p class="feature-desc">Choose 1, 2 or 3 meals per day and select Breakfast, Lunch or Dinner according to your mess meal structure.</p>
+            </article>
+
+            <!-- Feature 2 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3 class="feature-title">Automatic Meal Tracking</h3>
+              <p class="feature-desc">Meals are automatically treated as ON by default unless manually turned OFF, saving you repetitive daily taps.</p>
+            </article>
+
+            <!-- Feature 3 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>
+              </div>
+              <h3 class="feature-title">Expense Tracking</h3>
+              <p class="feature-desc">Track groceries (বাজার), outside food, snacks, transport, bills, mess manager expenses and other monthly costs.</p>
+            </article>
+
+            <!-- Feature 4 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h3 class="feature-title">Monthly Budget</h3>
+              <p class="feature-desc">Set a monthly mess deposit or personal budget and monitor your remaining funds and spending rate automatically.</p>
+            </article>
+
+            <!-- Feature 5 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+              </div>
+              <h3 class="feature-title">Meal Rate Calculator</h3>
+              <p class="feature-desc">Set your dynamic or fixed meal rate and calculate exact individual food dues without math headaches.</p>
+            </article>
+
+            <!-- Feature 6 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <h3 class="feature-title">Analytics & Statistics</h3>
+              <p class="feature-desc">View monthly meal counts, category-wise spending patterns, and balance breakdowns through clean visual charts.</p>
+            </article>
+
+            <!-- Feature 7 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <h3 class="feature-title">Day-by-Day Calendar</h3>
+              <p class="feature-desc">See meal status and daily expense activity on an interactive calendar. Verify any specific date in seconds.</p>
+            </article>
+
+            <!-- Feature 8 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              </div>
+              <h3 class="feature-title">Offline First</h3>
+              <p class="feature-desc">Everything works 100% without internet. No loading spinners, server timeouts, or cellular data required.</p>
+            </article>
+
+            <!-- Feature 9 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="feature-title">Local Private Data</h3>
+              <p class="feature-desc">All personal records stay safe in your device storage. No tracking, no third-party ads, and no data harvesting.</p>
+            </article>
+
+            <!-- Feature 10 -->
+            <article class="feature-card feature-slide">
+              <div class="feature-icon-wrapper green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </div>
+              <h3 class="feature-title">Backup & Restore</h3>
+              <p class="feature-desc">Easily export your mess records into a safe local backup file and restore whenever switching phones.</p>
+            </article>
+          </div>
+
+          <!-- Controls (Previous, Dots, Next) -->
+          <div class="features-slider-controls">
+            <button type="button" class="features-nav-btn prev-btn" id="featuresSliderPrevBtn" aria-label="Previous Features Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+
+            <div class="features-slider-dots" id="featuresSliderDots" aria-label="Features pagination dots"></div>
+
+            <button type="button" class="features-nav-btn next-btn" id="featuresSliderNextBtn" aria-label="Next Features Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Interactive Web Preview of Meal Rate Math -->
+        <div class="calc-demo-box reveal-on-scroll">
+          <div class="calc-demo-header">
+            <h4>Quick Mess Calculator Preview</h4>
+            <p class="section-subtitle" style="font-size:0.9375rem; margin-bottom:0;">
+              Test the meal rate calculation logic that runs offline inside the Messboi Android app:
+            </p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-input-group">
+              <label for="calcMealsPerDay">Meals per Day (1, 2, or 3)</label>
+              <input type="number" id="calcMealsPerDay" value="2" min="1" max="5">
+            </div>
+
+            <div class="calc-input-group">
+              <label for="calcMealRate">Estimated Meal Rate (৳)</label>
+              <input type="number" id="calcMealRate" value="48" min="1" max="1000">
+            </div>
+
+            <div class="calc-input-group">
+              <label for="calcDaysCount">Active Days in Month</label>
+              <input type="number" id="calcDaysCount" value="30" min="1" max="31">
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-top:20px;">
+            <div class="calc-result-card">
+              <span class="calc-result-title">Total Monthly Meals</span>
+              <span class="calc-result-val tabular-nums" id="calcTotalMeals" style="color:var(--primary);">60</span>
+            </div>
+            <div class="calc-result-card">
+              <span class="calc-result-title">Monthly Meal Cost</span>
+              <span class="calc-result-val tabular-nums" id="calcTotalMealCost">৳ 2,880</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SCREENSHOTS SECTION (Clean & Premium Gallery)
+         ========================================================================== -->
+    <section class="screenshots-section" id="screenshots">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">App Preview</span>
+          <h2 class="section-title">Clean, Focused Interface</h2>
+          <p class="section-subtitle">
+            Crafted for lightning-fast daily entry without ads, clutter, or confusion.
+          </p>
+        </div>
+
+        <div class="screenshots-showcase-grid">
+          <!-- Screenshot 1 -->
+          <div class="screenshot-item premium-screen-card reveal-on-scroll" tabindex="0" role="button" aria-label="View Screenshot 1: Home & Daily Meals">
+            <div class="phone-screen-frame">
+              <img src="/images/screenshot-1.png" alt="Messboi Home & Daily Meals" class="screen-device-img" onerror="this.src='/Messboi-Website/images/screenshot-1.png';">
+              <span class="screen-expand-hint" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                <span>Full view</span>
+              </span>
+            </div>
+            <div class="screen-meta-wrap">
+              <span class="screen-index-pill">01</span>
+              <h3 class="screen-card-title">Daily Meals & Auto ON</h3>
+              <p class="screen-card-desc">Breakfast, lunch & dinner with auto-on convenience</p>
+            </div>
+          </div>
+
+          <!-- Screenshot 2 -->
+          <div class="screenshot-item premium-screen-card reveal-on-scroll" tabindex="0" role="button" aria-label="View Screenshot 2: Bazar & Expenses">
+            <div class="phone-screen-frame">
+              <img src="/images/screenshot-2.png" alt="Messboi Bazar & Expense Tracking" class="screen-device-img" onerror="this.src='/Messboi-Website/images/screenshot-2.png';">
+              <span class="screen-expand-hint" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                <span>Full view</span>
+              </span>
+            </div>
+            <div class="screen-meta-wrap">
+              <span class="screen-index-pill">02</span>
+              <h3 class="screen-card-title">Bazar & Daily Costs</h3>
+              <p class="screen-card-desc">Categorized groceries, mess expenses & dues</p>
+            </div>
+          </div>
+
+          <!-- Screenshot 3 -->
+          <div class="screenshot-item premium-screen-card reveal-on-scroll" tabindex="0" role="button" aria-label="View Screenshot 3: Analytics & Budget">
+            <div class="phone-screen-frame">
+              <img src="/images/screenshot-3.png" alt="Messboi Analytics & Monthly Budget" class="screen-device-img" onerror="this.src='/Messboi-Website/images/screenshot-3.png';">
+              <span class="screen-expand-hint" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                <span>Full view</span>
+              </span>
+            </div>
+            <div class="screen-meta-wrap">
+              <span class="screen-index-pill">03</span>
+              <h3 class="screen-card-title">Monthly Calculation</h3>
+              <p class="screen-card-desc">Automatic meal rate calculation & remaining balance</p>
+            </div>
+          </div>
+
+          <!-- Screenshot 4 -->
+          <div class="screenshot-item premium-screen-card reveal-on-scroll" tabindex="0" role="button" aria-label="View Screenshot 4: Calendar & Local Backup">
+            <div class="phone-screen-frame">
+              <img src="/images/screenshot-4.png" alt="Messboi Calendar & Backup" class="screen-device-img" onerror="this.src='/Messboi-Website/images/screenshot-4.png';">
+              <span class="screen-expand-hint" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                <span>Full view</span>
+              </span>
+            </div>
+            <div class="screen-meta-wrap">
+              <span class="screen-index-pill">04</span>
+              <h3 class="screen-card-title">Calendar & History</h3>
+              <p class="screen-card-desc">Day-by-day activity logs & safe local backup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. REVIEWS SECTION (Animated Sliding Carousel Matched with Screenshot)
+         ========================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-backdrop-overlay"></div>
+      <div class="container relative-z">
+        <div class="reviews-header text-center reveal-on-scroll">
+          <h2 class="reviews-main-title bangla-text">
+            Messboi এর <span class="gradient-fire-text">সাফল্য</span>
+          </h2>
+          <p class="reviews-main-subtitle bangla-text">
+            বাংলাদেশের হাজারো শিক্ষার্থী, মেস ম্যানেজার ও ব্যাচেলরের নির্ভরযোগ্য আস্থা ও ভালোবাসার প্রকৃত প্রতিফলন
+          </p>
+          <div class="reviews-rating-pill bangla-text">
+            <span class="stars-gold">★★★★★</span>
+            <span class="rating-val">৪.৯/৫</span>
+            <span class="rating-dot">•</span>
+            <span class="praised-text">১০,০০০+ মেস সদস্য দ্বারা প্রশংসিত</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Sliding Marquee Tracks -->
+      <div class="reviews-marquee-container">
+        <!-- Row 1 (Moving Left) -->
+        <div class="reviews-marquee-track track-left" id="reviewsTrackLeft">
+          <!-- Card 1 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #e11d48, #be123c);">
+                <span>র</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">রাফি</h4>
+                <span class="author-role-pill bangla-text">মেস ম্যানেজার • RU</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মেসের মিল ও বাজার খরচের হিসাব রাখার পাশাপাশি <strong>Messboi</strong>-এর স্বয়ংক্রিয় মিল রেট ক্যালকুলেটর এক কথায় অসাধারণ! অফলাইনে পুরো মাসের সামারি সেকেন্ডেই বের হয়ে আসে!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>দ্রুত মিল রেট ও সামারি</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #0d9488, #0f766e);">
+                <span>ত</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">তানজিলা হক</h4>
+                <span class="author-role-pill bangla-text">হোস্টেল মনিটর</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মেস ম্যানেজমেন্টের সবচেয়ে ফাস্ট ও ক্লিন অ্যাপ হলো <strong>Messboi</strong>। ইন্টারনেট ছাড়াই মেম্বারদের ব্যালেন্স ও ডিপোজিট নিখুঁতভাবে হিসেব করে দেখায়। এক কথায় দারুণ!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>১০০% অফলাইন ও নিরাপদ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত ইউজার</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                <span>স</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">সাকিব মাহমুদ</h4>
+                <span class="author-role-pill bangla-text">বুয়েট মেস</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “অফিসিয়াল খাতা কলমের প্যারা থেকে <strong>Messboi</strong> অ্যাপে আসার পর আমাদের মেসের সব ঝামেলা শেষ। বন্ধুদের সাথে সরাসরি মিল সামারি ও রিপোর্ট শেয়ার করার অপশন দারুণ উপযোগী।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>সার্ভার জ্যাম মুক্ত অভিজ্ঞতা</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+                <span>ম</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">মেহজাবিন নাহার</h4>
+                <span class="author-role-pill bangla-text">ঢাবি ব্যাচেলর</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “<strong>Messboi</strong>-এর UI ডিজাইন খুবই প্রিমিয়াম ও চোখ ধাঁধানো। প্রতিদিন কার কত মিল অন বা অফ তা এক ট্যাপেই দেখা যায়। খাতার ভুল হিসাবের দিন এখন অতীত!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>অটো মিল ট্র্যাকার</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <!-- Duplicate Set for Seamless Infinite Loop -->
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #e11d48, #be123c);">
+                <span>র</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">রাফি</h4>
+                <span class="author-role-pill bangla-text">মেস ম্যানেজার • RU</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মেসের মিল ও বাজার খরচের হিসাব রাখার পাশাপাশি <strong>Messboi</strong>-এর স্বয়ংক্রিয় মিল রেট ক্যালকুলেটর এক কথায় অসাধারণ! অফলাইনে পুরো মাসের সামারি সেকেন্ডেই বের হয়ে আসে!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>দ্রুত মিল রেট ও সামারি</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #0d9488, #0f766e);">
+                <span>ত</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">তানজিলা হক</h4>
+                <span class="author-role-pill bangla-text">হোস্টেল মনিটর</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মেস ম্যানেজমেন্টের সবচেয়ে ফাস্ট ও ক্লিন অ্যাপ হলো <strong>Messboi</strong>। ইন্টারনেট ছাড়াই মেম্বারদের ব্যালেন্স ও ডিপোজিট নিখুঁতভাবে হিসেব করে দেখায়। এক কথায় দারুণ!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>১০০% অফলাইন ও নিরাপদ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত ইউজার</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                <span>স</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">সাকিব মাহমুদ</h4>
+                <span class="author-role-pill bangla-text">বুয়েট মেস</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “অফিসিয়াল খাতা কলমের প্যারা থেকে <strong>Messboi</strong> অ্যাপে আসার পর আমাদের মেসের সব ঝামেলা শেষ। বন্ধুদের সাথে সরাসরি মিল সামারি ও রিপোর্ট শেয়ার করার অপশন দারুণ উপযোগী।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>সার্ভার জ্যাম মুক্ত অভিজ্ঞতা</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+                <span>ম</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">মেহজাবিন নাহার</h4>
+                <span class="author-role-pill bangla-text">ঢাবি ব্যাচেলর</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “<strong>Messboi</strong>-এর UI ডিজাইন খুবই প্রিমিয়াম ও চোখ ধাঁধানো। প্রতিদিন কার কত মিল অন বা অফ তা এক ট্যাপেই দেখা যায়। খাতার ভুল হিসাবের দিন এখন অতীত!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>অটো মিল ট্র্যাকার</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Row 2 (Moving Right) -->
+        <div class="reviews-marquee-track track-right" id="reviewsTrackRight">
+          <!-- Card 5 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #ea580c, #c2410c);">
+                <span>ফ</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">ফারহান আহমেদ</h4>
+                <span class="author-role-pill bangla-text">চাকরিজীবী মেস</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “অন্যান্য অ্যাপে অ্যাকাউন্ট খোলা ও ইন্টারনেটের ঝামেলা থাকে, কিন্তু <strong>Messboi</strong> ১০০% অফলাইনে কাজ করে। আমাদের রাজশাহীর মেসের সবাই এখন নিশ্চিন্তে এটি ব্যবহার করছে।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>নিরাপদ লোকাল ব্যাকআপ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত মেস সদস্য</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #db2777, #be185d);">
+                <span>ন</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">নুসরাত জাহান</h4>
+                <span class="author-role-pill bangla-text">মেডিকেল মেস</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মাসের শেষে মেসের ফাইনাল হিসাব মেলাতে যে দিনরাত এক করতে হতো, <strong>Messboi</strong> দিয়ে তা মাত্র ৫ মিনিটেই নির্ভুলভাবে সমাধান হয়ে গেল! সময় ও শ্রম দুটোই বাঁচে।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>ইনস্ট্যান্ট ফাইনাল সামারি</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #059669, #047857);">
+                <span>আ</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">আরিফুল ইসলাম</h4>
+                <span class="author-role-pill bangla-text">কুয়েট মেস ম্যানেজার</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “আমাদের মেসের কে কত টাকা জমা দিয়েছে আর কার কত অবশিষ্ট ব্যালেন্স, <strong>Messboi</strong> তা এক নজরেই বুঝিয়ে দেয়। কোনো ক্যালকুলেটরেরও আর প্রয়োজন হয় না।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>নিখুঁত ব্যালেন্স ট্র্যাকার</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত মেস ম্যানেজার</span>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="pic-review-card">
+            <div class="card-quote-watermark" aria-hidden="true">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #4f46e5, #4338ca);">
+                <span>ত</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">তাহমিদ হাসান</h4>
+                <span class="author-role-pill bangla-text">শাবিপ্রবি মেস</span>
+              </div>
+              <div class="stars-gold" aria-label="5 stars">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “<strong>Messboi</strong>-তে কোনো বিরক্তিকর বিজ্ঞাপন নেই। এক ক্লিকে বাজারের এন্ট্রি আর মিল এন্ট্রি নেওয়া যায়। প্রতিটি ব্যাচেলর মেসেই এই অ্যাপটি থাকা জরুরি!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>বিজ্ঞাপনমুক্ত ও স্মুথ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <!-- Duplicate Set for Seamless Infinite Loop -->
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #ea580c, #c2410c);">
+                <span>ফ</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">ফারহান আহমেদ</h4>
+                <span class="author-role-pill bangla-text">চাকরিজীবী মেস</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “অন্যান্য অ্যাপে অ্যাকাউন্ট খোলা ও ইন্টারনেটের ঝামেলা থাকে, কিন্তু <strong>Messboi</strong> ১০০% অফলাইনে কাজ করে। আমাদের রাজশাহীর মেসের সবাই এখন নিশ্চিন্তে এটি ব্যবহার করছে।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>নিরাপদ লোকাল ব্যাকআপ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত মেস সদস্য</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #db2777, #be185d);">
+                <span>ন</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">নুসরাত জাহান</h4>
+                <span class="author-role-pill bangla-text">মেডিকেল মেস</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “মাসের শেষে মেসের ফাইনাল হিসাব মেলাতে যে দিনরাত এক করতে হতো, <strong>Messboi</strong> দিয়ে তা মাত্র ৫ মিনিটেই নির্ভুলভাবে সমাধান হয়ে গেল! সময় ও শ্রম দুটোই বাঁচে।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>ইনস্ট্যান্ট ফাইনাল সামারি</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #059669, #047857);">
+                <span>আ</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">আরিফুল ইসলাম</h4>
+                <span class="author-role-pill bangla-text">কুয়েট মেস ম্যানেজার</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “আমাদের মেসের কে কত টাকা জমা দিয়েছে আর কার কত অবশিষ্ট ব্যালেন্স, <strong>Messboi</strong> তা এক নজরেই বুঝিয়ে দেয়। কোনো ক্যালকুলেটরেরও আর প্রয়োজন হয় না।”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>নিখুঁত ব্যালেন্স ট্র্যাকার</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত মেস ম্যানেজার</span>
+            </div>
+          </article>
+
+          <article class="pic-review-card" aria-hidden="true">
+            <div class="card-quote-watermark">”</div>
+            <div class="pic-review-top">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #4f46e5, #4338ca);">
+                <span>ত</span>
+              </div>
+              <div class="author-meta">
+                <h4 class="author-name bangla-text">তাহমিদ হাসান</h4>
+                <span class="author-role-pill bangla-text">শাবিপ্রবি মেস</span>
+              </div>
+              <div class="stars-gold">★★★★★</div>
+            </div>
+            <blockquote class="pic-review-quote bangla-text">
+              “<strong>Messboi</strong>-তে কোনো বিরক্তিকর বিজ্ঞাপন নেই। এক ক্লিকে বাজারের এন্ট্রি আর মিল এন্ট্রি নেওয়া যায়। প্রতিটি ব্যাচেলর মেসেই এই অ্যাপটি থাকা জরুরি!”
+            </blockquote>
+            <div class="pic-review-bottom bangla-text">
+              <span class="feature-tag">
+                <span class="status-dot"></span>
+                <span>বিজ্ঞাপনমুক্ত ও স্মুথ</span>
+              </span>
+              <span class="verified-badge">যাচাইকৃত শিক্ষার্থী</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. FAQ SECTION (Accordion)
+         ========================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Find answers to common questions about Messboi installation, meal configurations, and local data storage.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- Q1 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is Messboi free?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes, Messboi is 100% free to download and use. There are no hidden subscription charges, paywalls, or feature locks.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Does Messboi require internet?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                No. Messboi is architected from the ground up as an offline-first app. All features—meal counting, expense logging, analytics, and budgeting—work completely without an active internet connection.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do I need an account?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                No. You do not need an account, email verification, or phone login. You can install the app and begin tracking your meals immediately.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Where is my data stored?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Your data is stored locally in your Android smartphone’s isolated app storage. It is never uploaded to remote cloud databases or third-party servers.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I change the number of meals?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes. You can customize whether your mess follows a 1, 2, or 3 meal schedule per day, and select any combination of Breakfast, Lunch, and Dinner.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I set my own meal rate?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes. You can input your estimated or final monthly meal rate at any time. Messboi will automatically recalculate your total meal costs accordingly.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I set a monthly budget?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes. You can enter your monthly mess deposit or total budget. The app displays your remaining balance and spending pace throughout the month.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can I backup my data?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes. Messboi includes a built-in local backup and restore feature. You can export a backup file to your phone's storage or SD card and import it anytime you switch devices.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="faq-item reveal-on-scroll">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is Messboi available for Android?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-body">
+                Yes, Messboi is specifically built for Android phones running Android 8.0 and higher. You can download the official APK directly from this website.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. DOWNLOAD SECTION
+         ========================================================================== -->
+    <section class="download-section" id="download">
+      <div class="container">
+        <div class="download-card-hero reveal-on-scroll">
+          <div class="download-badge-row">
+            <span>Version 1.0.0</span>
+            <span>•</span>
+            <span>Android</span>
+            <span>•</span>
+            <span>Offline</span>
+          </div>
+
+          <h2 class="download-hero-title bangla-text">Ready to simplify your mess হিসাব?</h2>
+          <p class="download-hero-subtitle">
+            Download Messboi and keep your meals, expenses and budget organized.
+          </p>
+
+          <div class="download-action-wrap">
+            <div class="download-buttons-group">
+              <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="btn-apk-download" id="mainDownloadApkBtn" title="Download Messboi APK">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Messboi APK</span>
+              </a>
+
+              <button type="button" class="btn-share-app" id="shareAppBtn" aria-label="Share Messboi app link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                <span>Share App</span>
+              </button>
+            </div>
+
+            <!-- Direct Store Badges in Download Section -->
+            <div class="download-store-row" style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:16px;">
+              <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="store-badge-card google-play-btn" style="padding:10px 18px; border-radius:12px; text-decoration:none;" title="Download on Google Play / Direct APK">
+                <svg class="store-icon play-icon" viewBox="0 0 24 24" width="22" height="22">
+                  <path d="M3.609 1.814L13.793 12 3.61 22.186c-.37-.37-.61-.89-.61-1.48V3.294c0-.59.24-1.11.61-1.48z" fill="#00e676"/>
+                  <path d="M17.41 8.384l-3.617 3.616 3.617 3.616 4.127-2.383c1.176-.679 1.176-1.787 0-2.466l-4.127-2.383z" fill="#ffd600"/>
+                  <path d="M3.609 1.814l10.184 10.186 3.617-3.616L5.59 1.127C4.78.66 3.99.99 3.61 1.814z" fill="#00b0ff"/>
+                  <path d="M13.793 12L3.61 22.186c.38.824 1.17 1.154 1.98.687l11.82-6.873-3.617-3.616z" fill="#ff3d00"/>
+                </svg>
+                <div class="store-badge-text">
+                  <span class="sub" style="font-size:0.65rem;">GET IT ON</span>
+                  <span class="main" style="font-size:0.95rem;">Google Play</span>
+                </div>
+              </a>
+
+              <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="store-badge-card app-store-btn" style="padding:10px 18px; border-radius:12px; text-decoration:none;" title="Download on App Store / Direct APK">
+                <svg class="store-icon apple-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.6-2.66 1.34-.56.64-1.06 1.7-0.92 2.73 1.02.08 2.05-.47 2.66-1.22z"/>
+                </svg>
+                <div class="store-badge-text">
+                  <span class="sub" style="font-size:0.65rem;">Download on the</span>
+                  <span class="main" style="font-size:0.95rem;">App Store</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Official SHA-256 Verified Build Hash Box -->
+            <div class="download-sha-card" style="margin-top:20px; background:rgba(0,0,0,0.22); border:1px solid rgba(255,255,255,0.14); border-radius:14px; padding:14px 18px; max-width:680px; margin-left:auto; margin-right:auto; text-align:left;">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+                <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:0.875rem; color:var(--primary-light, #38ef7d);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>Official Verified Build Hash (SHA-256)</span>
+                </div>
+                <span style="font-size:0.75rem; color:rgba(255,255,255,0.8); background:rgba(255,255,255,0.1); padding:3px 8px; border-radius:999px;">100% Genuine & Secure</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; background:rgba(0,0,0,0.32); padding:8px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); overflow-x:auto;">
+                <code id="sha256HashDisplay" style="font-family:monospace; font-size:0.8rem; word-break:break-all; color:#e2e8f0; flex:1; user-select:all;">sha256:d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe</code>
+                <button type="button" id="copySha256Btn" title="Copy SHA-256 Checksum" style="background:var(--primary, #059669); color:#ffffff; border:none; padding:6px 12px; border-radius:6px; font-size:0.75rem; font-weight:600; display:flex; align-items:center; gap:5px; cursor:pointer; flex-shrink:0;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span id="copyShaText">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Direct Social Share Buttons -->
+            <div class="download-social-share">
+              <span class="share-label bangla-text">মেস মেম্বারদের সাথে শেয়ার করুন:</span>
+              <div class="share-channels">
+                <a href="#" class="share-channel-btn share-whatsapp" id="quickShareWhatsapp" aria-label="Share on WhatsApp" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.63c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3"/></svg>
+                  <span>WhatsApp</span>
+                </a>
+
+                <a href="#" class="share-channel-btn share-facebook" id="quickShareFacebook" aria-label="Share on Facebook" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  <span>Facebook</span>
+                </a>
+
+                <button type="button" class="share-channel-btn share-copy" id="quickShareCopy" aria-label="Copy website link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="copy-svg"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="check-svg" style="display:none;"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span class="copy-text-label">Copy Link</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="download-file-note">
+              <span>Android APK • Version 1.0.0 • SHA-256 Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. FINAL CTA
+         ========================================================================== -->
+    <section class="final-cta-section" id="final-cta">
+      <div class="container">
+        <div class="reveal-on-scroll">
+          <h2 class="final-cta-title bangla-text">“Your mess. Your meals. Your হিসাব.”</h2>
+          <p class="final-cta-subtitle">Everything in one simple app.</p>
+          <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="btn-primary" style="font-size:1.0625rem; padding:14px 32px;" title="Download Messboi APK Now">
+            <span>Download Now</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       14. RICH 4-COLUMN FOOTER (Matched with Design)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid-container">
+      <!-- Column 1: Brand & App Download -->
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand-header">
+          <img src="/images/logo.png" alt="Messboi Logo" class="footer-logo" onerror="this.style.display='none'">
+          <span class="footer-brand-title">Messboi</span>
+        </div>
+        <h3 class="footer-slogan bangla-text">গড়ছি ডিজিটাল মেস ব্যবস্থাপনা</h3>
+        
+        <div class="footer-download-wrap">
+          <div class="footer-download-label">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span class="bangla-text">অ্যাপ ডাউনলোড করো</span>
+          </div>
+          <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="footer-play-badge" aria-label="Get it on Google Play / Download APK" title="Download Messboi APK">
+            <svg class="play-icon" viewBox="0 0 512 512" width="24" height="24">
+              <path fill="#4285F4" d="M48.7 13.7C37.8 25.4 32 43.1 32 66.8v378.4c0 23.7 5.8 41.4 16.7 53.1l2.8 2.8 214.3-214.3v-5.2L51.5 10.9l-2.8 2.8z"/>
+              <path fill="#FBBC04" d="M336.9 339.8l-71.1-71.1v-5.4l71.1-71.1 1.7 1 84.2 47.8c24 13.7 24 36.1 0 49.8l-84.2 47.9-1.7 1.1z"/>
+              <path fill="#EA4335" d="M338.6 338.7L265.8 266 51.5 480.3c7.9 8.4 21 9.4 36 0.9l251.1-142.5z"/>
+              <path fill="#34A853" d="M338.6 193.3L87.5 50.8c-15-8.5-28.1-7.5-36 0.9L265.8 266l72.8-72.7z"/>
+            </svg>
+            <div class="play-text">
+              <span class="play-sub">GET IT ON</span>
+              <span class="play-main">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: লিংক -->
+      <div class="footer-col">
+        <h4 class="footer-col-title bangla-text">লিংক</h4>
+        <div class="footer-title-divider"></div>
+        <ul class="footer-links-list bangla-text">
+          <li><a href="#privacy">প্রাইভেসি পলিসি</a></li>
+          <li><a href="#faq">ব্যবহারের শর্তাবলী</a></li>
+          <li><a href="#how-it-works">রিফান্ড নীতিমালা</a></li>
+          <li><a href="#features">আমাদের সম্পর্কে</a></li>
+          <li><a href="https://www.facebook.com/share/1DDFUMAJu9/" target="_blank" rel="noopener noreferrer">ফেসবুক পেজ</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: কোম্পানির তথ্য -->
+      <div class="footer-col">
+        <h4 class="footer-col-title bangla-text">কোম্পানির তথ্য</h4>
+        <div class="footer-title-divider"></div>
+        <div class="footer-company-info bangla-text">
+          <p class="company-info-item">
+            <span class="info-kicker">অ্যাপ ক্যাটাগরি:</span>
+            <span>১০০% অফলাইন মেস হিসাব খাতা</span>
+          </p>
+          <p class="company-info-item">
+            <span class="info-kicker">ঠিকানা:</span>
+            <span>রাজশাহী, তালাইমারী, রাজশাহী</span>
+          </p>
+          <p class="company-info-item">
+            <span class="info-kicker">অফিস:</span>
+            <span>তালাইমারী মোড়, রাজশাহী-৬২০৪, বাংলাদেশ</span>
+          </p>
+          <p class="company-info-item">
+            <span class="info-kicker">ডেটা স্টোরেজ:</span>
+            <span>লোকাল ডিভাইস প্রাইভেট মেমরি</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 4: যোগাযোগ -->
+      <div class="footer-col">
+        <h4 class="footer-col-title bangla-text">যোগাযোগ</h4>
+        <div class="footer-title-divider"></div>
+        <div class="footer-contact-list bangla-text">
+          <a href="mailto:anasexp@gmail.com" class="contact-item-row" title="Email Us">
+            <span class="contact-icon email-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </span>
+            <div class="contact-text-wrap">
+              <span class="contact-label">ইমেইল:</span>
+              <span class="contact-val email-val">anasexp@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+8801410332309" class="contact-item-row" title="Call Hotline">
+            <span class="contact-icon phone-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </span>
+            <div class="contact-text-wrap">
+              <span class="contact-label">হটলাইন:</span>
+              <span class="contact-val">01410-332309 / 09613-656060</span>
+            </div>
+          </a>
+
+          <div class="contact-item-row">
+            <span class="contact-icon clock-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </span>
+            <div class="contact-text-wrap">
+              <span class="contact-label">সময়:</span>
+              <span class="contact-val">সকাল ৯টা – রাত ১১টা</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/8801410332309" target="_blank" rel="noopener noreferrer" class="contact-item-row" title="WhatsApp Support">
+            <span class="contact-icon whatsapp-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.63c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3"/></svg>
+            </span>
+            <div class="contact-text-wrap">
+              <span class="contact-label">হোয়াটসঅ্যাপ:</span>
+              <span class="contact-val">01410332309</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text bangla-text">স্বত্ব © ২০২৪ - ২০২৬ Messboi — সর্বস্বত্ব সংরক্ষিত</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING HELPLINE BUTTON & POPOVER (Matched with Screenshot)
+       ========================================================================== -->
+  <div class="floating-helpline-container" id="floatingHelplineContainer">
+    <div class="helpline-popover" id="helplinePopover" role="dialog" aria-modal="false" aria-label="Support Helpline">
+      <div class="helpline-popover-header">
+        <div class="helpline-header-text">
+          <strong class="bangla-text">Messboi সাপোর্ট হেল্পলাইন</strong>
+          <span class="helpline-status-dot">সকাল ৯টা – রাত ১১টা সক্রিয়</span>
+        </div>
+        <button type="button" class="helpline-close-btn" id="helplineCloseBtn" aria-label="Close helpline">&times;</button>
+      </div>
+      <div class="helpline-popover-body bangla-text">
+        <p class="helpline-intro">মেসের হিসাব বা অ্যাপ নিয়ে কোনো প্রশ্ন থাকলে সরাসরি আমাদের সাথে যোগাযোগ করুন:</p>
+        
+        <a href="https://wa.me/8801410332309" target="_blank" rel="noopener noreferrer" class="helpline-action-card whatsapp">
+          <div class="helpline-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.63c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3"/></svg>
+          </div>
+          <div class="helpline-card-info">
+            <span class="label">হোয়াটসঅ্যাপে চ্যাট করুন</span>
+            <span class="value">01410332309</span>
+          </div>
+        </a>
+
+        <a href="mailto:anasexp@gmail.com" class="helpline-action-card email">
+          <div class="helpline-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="helpline-card-info">
+            <span class="label">ইমেইল সাপোর্ট</span>
+            <span class="value">anasexp@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="tel:+8801410332309" class="helpline-action-card hotline">
+          <div class="helpline-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="helpline-card-info">
+            <span class="label">হটলাইনে কল করুন</span>
+            <span class="value">01410-332309</span>
+          </div>
+        </a>
+
+        <div class="helpline-address-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>রাজশাহী, তালাইমারী, রাজশাহী</span>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="floating-helpline-btn" id="floatingHelplineBtn" aria-label="Open support helpline" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+      </svg>
+      <span class="helpline-btn-text bangla-text">হেল্পলাইন</span>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL FOR SCREENSHOTS
+       ========================================================================== -->
+  <div class="lightbox-modal lightbox-backdrop-click" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Screenshot Preview">
+    <div class="lightbox-content-wrap">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close modal">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous screenshot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next screenshot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SHARE MODAL (Interactive)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="shareModal" role="dialog" aria-modal="true" aria-label="Share Messboi">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeShareModalBtn" aria-label="Close share dialog">&times;</button>
+      <h3 class="modal-title">Share Messboi App</h3>
+      <p class="modal-desc bangla-text">আপনার মেসের বন্ধুদের সাথে লিংক শেয়ার করে মেসের মিল ও খরচের হিসাব সহজ করুন।</p>
+
+      <div class="share-modal-options">
+        <a href="#" class="share-option-card share-option-whatsapp" id="modalShareWhatsapp" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.63c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="#" class="share-option-card share-option-facebook" id="modalShareFacebook" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="#" class="share-option-card share-option-telegram" id="modalShareTelegram" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.313 4.693c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>
+          <span>Telegram</span>
+        </a>
+
+        <button type="button" class="share-option-card" id="modalShareCopy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span id="modalCopyBtnText">Copy Link</span>
+        </button>
+      </div>
+
+      <div class="share-link-input-group">
+        <input type="text" class="share-link-input" id="sharePageUrlInput" readonly value="">
+        <button type="button" class="btn-primary" id="copyInputUrlBtn" style="padding:6px 14px; font-size:0.8125rem;">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ACCOUNT MODAL (Offline Account State)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="accountModal" role="dialog" aria-modal="true" aria-label="Account Information">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeAccountModalBtn" aria-label="Close account dialog">&times;</button>
+      
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:18px;">
+        <div style="width:48px; height:48px; border-radius:50%; background:var(--accent-light); color:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <h3 class="modal-title" style="margin-bottom:2px;">Guest Account</h3>
+          <span style="font-size:0.8125rem; font-weight:600; color:var(--accent);">✓ 100% Offline & Private</span>
+        </div>
+      </div>
+
+      <p class="modal-desc bangla-text">
+        Messboi অ্যাপে কোনো অনলাইন অ্যাকাউন্ট, ক্লাউড সার্ভার বা পাসওয়ার্ডের ঝামেলা নেই। আপনার মেসের মিল, বাজার ও বাজেট সম্পূর্ণ সুরক্ষিতভাবে আপনার ডিভাইসে লোকালি সংরক্ষিত থাকে।
+      </p>
+
+      <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:14px; display:flex; flex-direction:column; gap:10px; margin-bottom:20px;">
+        <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+          <span style="color:var(--text-muted);">Account Mode:</span>
+          <strong style="color:var(--text-main);">Local Device Profile</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+          <span style="color:var(--text-muted);">Cloud Sync:</span>
+          <span style="color:var(--accent); font-weight:600;">Disabled (Offline Safe)</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+          <span style="color:var(--text-muted);">Data Location:</span>
+          <span style="color:var(--text-main); font-weight:600;">Local SQLite Database</span>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px;">
+        <a href="/apk/Messboi-v1.0.0.apk" download="Messboi-v1.0.0.apk" data-sha256="d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe" class="btn-primary" id="accountModalDownloadBtn" style="flex:1; justify-content:center; padding:11px 16px; font-size:0.875rem;" title="Download Messboi APK">
+          Download APK
+        </a>
+        <button type="button" class="btn-secondary" id="closeAccountModalBtn2" style="padding:11px 16px; font-size:0.875rem;">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       REVIEW MODAL (Interactive)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="reviewModal" role="dialog" aria-modal="true" aria-label="Write a Review">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeReviewModalBtn" aria-label="Close review dialog">&times;</button>
+      <h3 class="modal-title">Write a Review for Messboi</h3>
+      <p class="modal-desc">Share your experience using Messboi in your bachelor or student mess.</p>
+
+      <form id="reviewForm">
+        <div class="modal-form-group">
+          <label for="reviewerName">Your Name / Nickname</label>
+          <input type="text" id="reviewerName" placeholder="e.g. Tanvir / Arif" required>
+        </div>
+        <div class="modal-form-group">
+          <label for="reviewerMess">Mess Location or Institution</label>
+          <input type="text" id="reviewerMess" placeholder="e.g. Farmgate Bachelor Mess / Jahangirnagar" required>
+        </div>
+        <div class="modal-form-group">
+          <label for="reviewerComment">Your Feedback & Experience</label>
+          <textarea id="reviewerComment" rows="3" placeholder="Tell us how Messboi helped your mess হিসাব..." required></textarea>
+        </div>
+        
+        <div id="reviewFeedbackNotice" style="display:none; padding:10px; margin-bottom:14px; background:var(--accent-light); color:var(--accent); font-size:0.875rem; border-radius:6px; font-weight:600;"></div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:8px;">
+          <a href="#" id="reviewExternalFormLink" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem; color:var(--text-light); text-decoration:underline;">
+            Open External Form
+          </a>
+          <button type="submit" class="btn-primary" style="padding:10px 20px; font-size:0.875rem;">
+            Submit Feedback
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
