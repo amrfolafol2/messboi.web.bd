@@ -1079,7 +1079,7 @@ function initThemeSystem() {
    ========================================================================== */
 function initDownloadSystem() {
   const SHA256_HASH = 'sha256:d72d6e503badcbd1ef00753e8c5f5b7241d98be9c657c9cd384fc59ce9831ffe';
-  const APK_PATH = 'https://github.com/anasexp10-create/messboi.apk/releases/download/v1.0.0/messboi.apk';
+  const APK_PATH = '/downloads/messboi.apk';
   const APK_FILENAME = 'messboi.apk';
 
   // Create toast container if not present
@@ -1123,12 +1123,12 @@ function initDownloadSystem() {
   function handleDownloadAction(e) {
     const targetLink = e.currentTarget;
     
-    // Ensure the href and download attributes are pointing directly to the official GitHub Release APK
+    // Ensure the href and download attributes are pointing directly to the Messboi APK file
     if (targetLink && targetLink.tagName === 'A') {
       targetLink.setAttribute('href', APK_PATH);
       targetLink.setAttribute('download', APK_FILENAME);
-      targetLink.setAttribute('target', '_blank');
-      targetLink.setAttribute('rel', 'noopener noreferrer');
+      targetLink.removeAttribute('target');
+      targetLink.removeAttribute('rel');
       targetLink.setAttribute('data-sha256', SHA256_HASH);
     }
 
@@ -1155,8 +1155,8 @@ function initDownloadSystem() {
   downloadButtons.forEach((btn) => {
     btn.setAttribute('href', APK_PATH);
     btn.setAttribute('download', APK_FILENAME);
-    btn.setAttribute('target', '_blank');
-    btn.setAttribute('rel', 'noopener noreferrer');
+    btn.removeAttribute('target');
+    btn.removeAttribute('rel');
     btn.setAttribute('data-sha256', SHA256_HASH);
     btn.addEventListener('click', handleDownloadAction);
   });
